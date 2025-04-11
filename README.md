@@ -1,7 +1,6 @@
 # QuickServe - Restaurant Management System
 
 ![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-5.0-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 QuickServe is a restaurant management web application built with ASP.NET Core MVC, following the tutorial by [Evan Gudmestad](https://youtu.be/q9X3SDEZtpw).
 
