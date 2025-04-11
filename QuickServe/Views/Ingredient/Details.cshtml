@@ -1,0 +1,32 @@
+﻿@model Ingredient
+@{
+    ViewData["Title"] = "Ingredient Details";
+}
+
+<h1>@Model.Name details</h1>
+
+@if(Model.IngredientId != null && Model.ProductIngredients.Any())
+{
+    <h4>Product</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.ProductIngredients)
+            {
+                <tr>
+                    <td>@product.Product.Name</td>
+                    <td>@product.Product.Description</td>
+                    <td>@product.Product.Price</td>
+                </tr>
+            }
+    </table>
+}
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
